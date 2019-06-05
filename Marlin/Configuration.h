@@ -941,8 +941,8 @@
  *   (0,0)
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER -40  // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -10  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.8   // Z offset: -below +above  [the nozzle], also can be set with M851 Zxx.xx
+#define Y_PROBE_OFFSET_FROM_EXTRUDER -9  // Y offset: -front +behind [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.7   // Z offset: -below +above  [the nozzle], also can be set with M851 Zxx.xx
 
 // Certain types of probes need to stay away from edges
 // NEEDS TO BE >= X_PROBE_OFFSET_FROM_EXTRUDER and Y_PROBE_OFFSET_FROM_EXTRUDER
@@ -976,7 +976,7 @@
  * Example: `M851 Z-5` with a CLEARANCE of 4  =>  9mm from bed to nozzle.
  *     But: `M851 Z+1` with a CLEARANCE of 2  =>  2mm from bed to nozzle.
  */
-#define Z_CLEARANCE_DEPLOY_PROBE   10 // Z Clearance for Deploy/Stow. BLTOUCH set to at least 15
+#define Z_CLEARANCE_DEPLOY_PROBE   8 // Z Clearance for Deploy/Stow. BLTOUCH set to at least 15
 #define Z_CLEARANCE_BETWEEN_PROBES 4 // Z Clearance between probe points. BLTOUCH set to at least 10
 #define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
 //#define Z_AFTER_PROBING           5 // Z position after probing is done
